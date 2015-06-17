@@ -22,7 +22,7 @@ COPY ./resources/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # install plugins
 RUN  \
-    /elasticsearch/bin/plugin -i royrusso/elasticsearch-HQ
+    /elasticsearch/bin/plugin -i royrusso/elasticsearch-HQ && \
     /elasticsearch/bin/plugin -i mobz/elasticsearch-head
 
 # expose ports
