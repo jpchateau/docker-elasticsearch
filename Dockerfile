@@ -1,13 +1,8 @@
-#
-# Elasticsearch Dockerfile
-# git@github.com:monsieurchico/docker-elasticsearch.git
-#
-FROM dockerfile/java:oracle-java8
-MAINTAINER Romain Derocle "rderocle@gmail.com"
+FROM java:8-jre
+MAINTAINER Jean-Philippe Chateau "contact@jpchateau.com"
 
-# prevent debian errors
-ENV DEBIAN_FRONTEND noninteractive
-ENV ES_VERSION 1.4.4
+# Elasticsearch verion
+ENV ES_VERSION 1.6.2
 
 # update os and install nginx
 RUN \

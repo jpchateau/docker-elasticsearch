@@ -6,8 +6,9 @@ You must have [Docker](https://www.docker.com/) >= 1.5.
 
 ## What's inside
 
-* [latest elasticsearch](https://www.elastic.co/products/elasticsearch)
+* [elasticsearch 1.6.2](https://www.elastic.co/products/elasticsearch)
 * [HQ plugin](https://github.com/royrusso/elasticsearch-HQ)
+* [HEAD plugin](https://mobz.github.io/elasticsearch-head)
 
 ### Configuration
 
@@ -20,7 +21,7 @@ You can bind ports :
 
 ### Volumes
 
-You can mount directories :
+You can mount directories:
 
 * /data : parent dir of all shared directories
 * /data/data
@@ -38,6 +39,6 @@ docker run \
   --name elasticsearch \
   -p 9200:9200 \
   -p 9300:9300 \
-  -v ~/docker/elasticsearch:/data \
-  monsieurchico/elasticsearch
+  -v ~/elasticsearch:/data \
+  jpchateau/elasticsearch
 ```
