@@ -18,7 +18,10 @@ COPY ./Resources/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 # install plugins
 RUN  \
     /elasticsearch/bin/plugin -i royrusso/elasticsearch-HQ && \
-    /elasticsearch/bin/plugin -i mobz/elasticsearch-head
+    /elasticsearch/bin/plugin -i mobz/elasticsearch-head && \
+    /elasticsearch/bin/plugin -i karmi/elasticsearch-paramedic/1.0 && \
+    /elasticsearch/bin/plugin -i lmenezes/elasticsearch-kopf/1.6.1 && \
+    /elasticsearch/bin/plugin -i lukas-vlcek/bigdesk
 
 # expose ports
 EXPOSE 9200

@@ -4,14 +4,17 @@ Elasticsearch is a sophisticated search engine.
 
 ## About this image
 
-* [Elasticsearch 2.3.5](https://www.elastic.co/products/elasticsearch)
-* [HQ plugin](https://github.com/royrusso/elasticsearch-HQ)
+* [Elasticsearch 1.7.5](https://www.elastic.co/products/elasticsearch)
+* [HQ plugin](http://www.elastichq.org/)
 * [HEAD plugin](https://mobz.github.io/elasticsearch-head)
+* [Bigdesk plugin](http://bigdesk.org/)
+* [Paramedic plugin](https://github.com/karmi/elasticsearch-paramedic)
+* [kopf plugin](https://github.com/lmenezes/elasticsearch-kopf)
 
 ### Build
 
 ```bash
-docker pull jpchateau/elasticsearch
+$ docker pull jpchateau/elasticsearch
 ```
 or
 ```bash
